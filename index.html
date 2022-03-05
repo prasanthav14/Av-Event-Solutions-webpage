@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en" style="scroll-behavior: smooth;">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AV Light and Sounds</title>
+    <link rel="icon" href="img\avlogo.png" type="image/icon type">
+</head>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+<body class="container-fluid" style="margin:0;background-position: center;background-repeat: no-repeat;background-size: cover;background-image:url('data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxASEBAQEBAPEBUVEBUVDxUWEA8QFRUVFRUWGBcVFRUYHyggGBolGxUVITEhJSorLi4uFx8zODMtNygtLisBCgoKDg0OGhAQGyslHyUtLS8tLi0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLf/AABEIALcBEwMBIgACEQEDEQH/xAAcAAABBQEBAQAAAAAAAAAAAAAAAQIEBgcDBQj/xAA4EAABBAEDAgQFAgYCAQUBAAABAAIDEQQSITEFBgcTQVEiYXGBkRQyQlKhscHwIzNiF3KCotEV/8QAGQEAAgMBAAAAAAAAAAAAAAAAAAIBAwQF/8QALREAAgIBAwIEBQUBAQAAAAAAAAECAxEEITESQVFhcfATIoGRwRSh0eHxMkL/2gAMAwEAAhEDEQA/AMNQhCAFClkUFGjG4Umc7JZDx4bIhKEiUBMId4uFzk5XaGPZc5YyClXI7WxyXfGgc9wa1pcfYAk/hcFd/DLNx4cyM5FBusWTVc+tpLrHCDklkamCnNRbwR8HsvPJj14s0bXua1rnMLR8RAF3xytWy/B/COOWxvmEwZ8Ly4aS+vVlftJ+60HqnUMduM+V8jPL0E6tTSDttpPqeKWN9V8YMgRPijiiD6LWy26/bVo41f0XLlbfbLEP2NSx0ZSxvvn39zTOhdbw3YsbmSwxNZGGuYZGN8osFFrgTtRBWAd69Xhnz8h+PXlmQ6TwD7kfU2furP4V9lY+eZcjL1SNYQAzWW6nOBNuI3oD82vQ8TuwcTFhbk4rPKGrS9mpzhvuCL39CpqVVNuG23x5f39hnmWVHbO/059MmXal1Y5etD2b1GSEZEeJM6MjUHADdvuG3ZH2Xhttp0lb01Lhle6e5KBSpoCWkg5xlaocjV6GlcJmKyMiucMoiNKUpHBKFaZ0IUieU0hSA0oQUIAEiVIggEiVIggEiVIgASpEIAVCRCAOKEJzRaYU6Y43Tp3LrCAFOxenGYhrRZOwVcpqO7L4VymsR5PEUqCPa1ZOpdgdQhi/UHHldGBbnBpIA9zXp816HbHh9lZkXmhzIWfwlwJJ+gCrnqaox6urYaOnsUsNce/QpzJQHUto7Q8JoMrCjyMiWRjpW6owzTQaeCbG98rI+5OgzYOQYZqPq1w4c33C1jsfxSjxsZkEzWuYwVG7VpLW/wApFb0kslFqM1lx8v63GrU/mjtnbnH152KF3n2LN0+Z7C7zGA/C4CvhP7SQqpNstJ7/AO+ocsP0U4u2A9APQLNZje6bTzskszWN9s84DUQhHChzjfHGRomdWnU6vazX4XZ7tl7vYPbgzsryjwG276e5/wB9Qrj354aNxsZ2TjPLgwf8rCP4f5m7+nsos1NcLFW3uLCmcodWfp3Kf2h3tldOe50Oh7XCnseHFrgOODsR7qb3T4iZWeY2zMjZGxwJjZqp2+9k73WypKFY6K3Lqa3KldNcM+uek9ew5cZk8U8Ij0Aj42N0AD9pHoRxXyXzn3nkQyZs8kAphkcW/cqtMeQNiQuuI+zSzVaT4Tcs5L1YmunHJ6GLZ2AJXQhbl4a9v4zOnwv0RyPlaXyOLWuNkkad+AOFQ/Evo8UOa4QgNDo2vc0cNJux/S/uqY6mMpuODTGPbuik0uMrFP8AKXN8a0KRDgeRI1NBUvIjUJ4WiLyZJrDFKROCQqRBpCaV0XMpiASJUiCASJUiABIhCCAQhCABCVCAOCkNbQXJnK6yO2UsEc3OXt9qdXbj5Eckg1NDhqHy9V4CVLZXGcXF8MauyVc1OPKPsOHubp8mOJhk45iLLI8xl1X7Szm/SlQuhd5YUcbmFwia1ztAP8tmh+F8+seRwaU0SOe3c2smq0vxsdUuPA0ae6EFKKWc/g97xK7jZnZYfEPgYzS0++9kqoJzxRITFrqrVcFCPCM1k3OTkxQVJ5CirvE70TMWLPY7O7hfgZbMho1AAtkb/Mw8j+gWh93eJ8WRiPhhjc0yNpxJuh7DZZHIwqR5dNWa7TV2SU5cmiq2UVhf4QigIKFqMxd+jeHHUcmBuRFEzQ4XGHPa1zx7tB9Pa6tVUQPjkc17S1zXFr2kUQQaIIX0L2v4g9NdhQmTIix3sia2SN1gtLGgHSAPiG21LEe7uqx5efk5MTdLJJLYKo0AG6j8zV/dYNPdbOUozjhGqcIrDX+m0+BznPxpiXHS2QBg5A2txHz3Cn+Kfb5njidCzVN5lA7AllHUHE+gNflY/wBhd+S9Oc9pj82N5BLdegtcNtTTR9NiPotE6H4kw5crmTBuMKBi1yWHc6gXGgDxX3WW+FleWo53ynn8fszRW+qxST7cfQzrrXSMjGcGzs02LabBB+hC861oXiV1nHkijhjeyRwfqJaQ4NFEVY9/8LPU9E5TgnJbmiawzjNHa8+eNeqVFnjWqEsMz2QyjzAgp8jaSLQY8YGFNKeQgqRTklSlIpARCVIggRCVIggEIQgAQhCAGxBJIpL4NIUNyE8hJNbMRCEJhQU/Ck2pQF3xzulksoeDxIMofEuCkZKjqVwLLkE5vKalCkg0/sXwzl6hj/qTK2Fl0wlpcXEckAelqv8AefbcuBM+CWiQA5jhelzTw4f1/Cu3hh4o42JiDDzGyARk+S9jdYLXGy1wuwQSd/mvL787li6lkiVjSI2M0Rh1BxFkkur3J4WBynGfzZ/Buh8+UksY+v8AJQ+j9v5eWXDFx5p9P7tDCQPqeAo+Z0yeKQxSxPjkBosc0tcCfkV9E+EnU8NmF5IfHFIHl0gc5rS6+Hb87bfZV/vDrPT5Ov4VOjf5bC2d4IczXuYwXDY6Sf8AaR+sllvp2Wdu+wn6ddfQ/uZPm9t5cMYfJBIxp4JaRyrPD4V9Sbj+e6Nv7NZj1jzAKv8Ab716crV+5urY0GK+WUxvAosbbTreCC0D7hdpPEzpQgM/6phOnV5VO826/Zprn0vhZYa26yOUvtkunVCvDSz6+0fO7OnOJpcMuNzF6TOstdLJIW6db3O0jhtkmh8t1G6g8P4+q3xlNS+ZCyjW4Ppe4zpbnyOaxtlznBrR7kmgFqX/AKZu8m/PuXTenR8Gqv26rv7qo9h9oZuQ5uRjNaBHI0hz3aRraQaHut9GG8MJdQfW4AsXXI9wufrrpKaVb45LaH0x+bk+cpoC0kEUQSD8iOVzeF73dPTpIMiRkhDiTrDqrUHEm69N7/Cr7lorl1JMsmkiBksUel6EzLUCRtLVB7GOyOBhCaQulrmU5SxpTSnlMKcUEiVIggEiVIgAQhKggKSJUIJwd5X2FBUqQ7KIiITeWCEITCAukfIXNdI30QR6EH8IAv8AgeGuVPAJQQ2xbQRuqNn4b4ZHxSCnNNEL6G7O73wpcOPVLFE9jA2RjnBpBA535CxbxB6nHk9Qnlh3YSACOHEDcj7rmaPUXTtlCxceXBv1Ndaj1RWN9n4+/flWEIQumYBbUyHJIGxUJdY1DSa3Gi2nsOlmcTuSuYcQbG3sh6apRDZOflyPA1vc6uLJNJel4bp8iGAODTJK1gJ4GogWrr2N4cy52P8AqDK2FhJEdtLi7TsTQ4F7flVrujok3T8t0LzTm6XxvaSLHIe0/UfkLPG6Epyri90XSrlhTlua83ws6e+Py42vY/T/AN3mPc6x6lpOk/Shyqp3l4fnDg/URSmVrSBIC0NLQdg4Udxf91H6N4t5jHsE0cMjaqQta5kjhXN3pB9eF6Hd/iIzKxnY8ET2B9eYXlt0DekAfOt/kubCGrhNKeWvXK/r0NqnVLPTjHpgsPhH3RCMRuM8Fj4XOP8A1vLXtc4uBtoNHcjf2C9frvitgxPfFpyHObttHpF//Ig+vsqf2FnY/wCn0BzGvDiXgkAn2PzVV8SMyF+Szyi1zmsqQggi72Fj1Av8pYVqzUShhpPf35MeyqMKla3l7GqdE6fj9RYM+eIP8wFsDC40yNjiN6O7idRP1CpXiN203EmY6JjmxSNsD4iGuHIs+/P5XPwl7rkjmbhmnRv1FgIJ0Pq+RwDX5pX/AL3yGHEnM9fEwiMbbv8A4NP3o/lVy6tPd09uy8h638VZzt+TEVEyolNdGQmvbYXTTwyiUcrDPJSFdpmUVyWhPJjawNKYU4pCnQgxKkKEACEJEEAhCEECoQhBI6bhRVIfwo6lESBCEKRQQhCAOreFzcnt4TCgkRCEIIBPjTFKx491DeETFZZwemqVlRVuFEQnlEyTTwzXfDvxKx8XDbi5TJf+Mu8pzGtcC0kupwsUQSd1TfELuUdQzDM1pYxrBHEDWrSCTbq9SSVVbQqIaWuFjsXL/I7tbj0m29L8M8EY7BMHvlLAXyCRzacR/CBtQ+YKy7ruAceeaAnVoeW370dj+FpnZ0nXJcKNzBiaNFQOm8wSuaNgdtiPYnmlmPcEMzJpWz2JBIfMvnVe5+axaN2u2cbJ5x5+f7G29V/DThHB5pWoeDXRcaX9RPK1kj2Oa1jXAODQ4Xro7b8fYqJ0Hwwlnx2TvmbEXt1MYWF2x4Lje1q1+H/QhhxvJrzzI9kp2NBrtmj5VTvnqCNbq65VOMJb5x79+AafTTU02j1+tYODjPbPpgx5JD5V02MPq3V7Xtz9FFxJMaaZsbnRyPaPMjbqD6I2J/8At/n0WfeMUj3ZcIMpePJsMJ2YdRBIA4uv6Kf4d4dQiZjXardbw07EGqB+n91hemSoV3Vz/i3Ntdz+I6MLbuWzv/EhOG+R4aHMLfLNAGyQNPzsXt8llTgrJ3zPNLJFFrfI5xAYy/4iaBA9yvQZ4fzCLUZWatNloBr6WrqJRpqXW+SLIuU2kuDO8hqhuC97LxC1zmuFEGj9QvIyYqXUrmmc+2tojFNKcghXIynMpEpCFJAiRKkQAICEoQAqEIQB3yGCqUJzaTjKU4OBQlgJNSZwQuxYExzaU5FwMQhCkglY8erhMniLTuFfvBXAx5857Zw1xbEXxMPDnAgHb1oG6Vy8a+38RuCMljI4pWSsa3S1rdYdYLSBzXP2KxT1XTeqsc/k0fDi6853MIQlWn+H/hRNmt8/JeceKhoAGqR9/L+EV91qnOMeSmMXIzOMLoZCDstA8RvD8dN0uY8yRu4JFH53/T8rOnndLXYrFlDzg4Y8zpJOSKXBCFalgrbbFQEKy9gdGizM+DHmNMcXF4ui4MaXaAfc1/dLOahFyfCCMXJ4RuvhvntyenY73gx6WCOgNneWNOpvyIA/qsw8Z+kPjy/1FgsmaNO1EFjQ0g/PYG/mtmZjwYeNIIYWRsjY54a34BsLP5pYb4i9zuzi34QxrRTG3qq+ST7rh6PLv6oLbf7M6Vm9csvt+5fvDfu5uZFFjGOTzo4w2QhoLCGig672JAG3un9yds5zZ35ONlvi82WMSs0sLA3Zmpt38QbX1VE8I+5oMOd7MgiNsg+GQ8A7bOPoNuVoPiH3zitwpGY88ckkg0s8uRri2+XW3hRbQ4XuNa2fllc59Ofqhq7W4pvjv2OWZ2Fi5TXOk8zzCP8AuL3ueXAckXpr5VXsrhh9JihiZGwU1rA1tbbALH+g+LEjGmPLj1bDS+NtO+eppNb/ACpTWeIOZmTCDCjYxuj98rS5zR6uIBr2obquem1KXTPhb5b2+5arYTeYNb7YS3PC6rL5fWnmIa9GTTQTz/Nv6Dc/RbBg5LJGktJJA3FVusoj7Tzo52Tx6co6yZTeg/FdlxdtvZ3Wh9CeYTUocwvGwdpra+SCQo1fRJR6XnCx9vIuqjLEs5TzkqffXQRGP1DLGp9PF2LI2I/CoWVCt/6nCyVjonhrmkcUD9/qsr7k7cMOpzLczVXHHt9R6K3Sanbpk9yLa+tdWCgvZRTCFNzIaUMrsxeUcmccM5kLmV1K5uCsRWIUiUpECglQlQAiEtIQSRkIQmKxwcuw3CjrpGd1DJTGOCRTXQWLCiuYRyhNMlxaJGBmSQyNlie6N7TbXNcWuH0IXoda7jycoD9RPLNX7dbiQL5ocLxEqhwi2pNboFNpYQ9hojg0fXhbr234v4UEAEolLqsxtYbDq3AP7a+6wZLartoVjjLLTXGPPnlMeFrjFxwmn4+X2NB8SPEJ3U3MYyIwxMvSCQ5xJqya29Bt8ln70NKfI1PCCjshZScjkhCE4gqk4WXJFIyWJxY9jg5jhyCOCFFQgC39X8QupZMXkSzjQa1hrGMLq/mIH9F4G7hZKgAqZFNQoqpVRgsQSRcrHL/pjTEbpD2EDfZb14SdCxDhwylkcj5A50jnNa42CR5e/AFcK59U7awiDIcbH1Dg+VHtfpwsMtfhvEdllc+Bd8GOUm935eJ8lO5Wq+GnSmxxjIkLv+VtUK2bex+Z2/BXneL/AETHx5oJYGtjMrXa2NAaLbVOAHF3X2Vk8FnGXHkaaeY5dLL5YwjV/U6vwl1dzt0qnHhvf36lumjGq9qXZbe/QtuHlMBfE0P3pwcWkNI4rVxYrj5qdlOYWNGzvUVR2XpS9PaadQsCqofn/fdMyIGAAgD7AbriOJ0FfGUk1ko+Kc1uVN5mt2OC0RACzXvfO29r2c3EY6OiNj+6xf2XrRMbZ+nF8KLl0Bv7+nuplLO5dCe+DHe5OmiORwA25HyVTyI6K2Tr/RNducLPvwSFmfWsHQ9zefb6LtaTUKSx3Mero/8ASPDIXNwXYtQWLo5OW0RSkT3tTCmK2KEoSBOYEAh1JU60iUYgoQhWFQJUiVAFh7TwjkTNiur5+QWu9R8G2yYxMbmtl0WwG9zWwJ9FiHSOovx5Wyxmi0rfOj+NGNJCDJDI2cN+IAAsJ9wea+Sx2wxZ1SbSxtjPPnj9s7c5N1djdShBJvLznHHbn657nz5lY7o3ujeC1zXFrgeQQaIUZe93ZKJMiSfgyPc5w+bjdrwVprk5QTZlth0TcQQhCcrJnT8R80scUbS5z3hrAOS5xoBaZ1nwdzIcV84kikcxmp8bdWqgLOk1RI3/AAs97a6qcTLx8lrQ4xStfR9QOR+LW8dX8Y+nfpXug818royGRujIAcRXxu4ofK7WTUSsUl0+/Uvq44Xn6HznSanuKYtZQCEIQALs07LivR6LiedPFDYGuRrQTxuaSyeFljQWZJIm9E7nzcS242Q+IF1kDSRfvRBo7cq14PfvWsg6InSTPrhsbX/ctAWgS+F3TXQeX5bg/TQlDnag6v3Vdc+lLx/CRkMJy8NxYMhmQQ7cAvYNgW+4Bv8AIXJt1VNkJTUMteK/dm+qE4v/AK297bmW9yT5s2ReY2YygAaXMLSG/wDi2thzwrv4T9yY+PHJDK9kDxIXW9wYHtIAqz6iuPotgzcKF1HS3WBWr+IDkC/a96WQ+JPb5kmglhgdI7fzw0AW0EVZ9/3BVrUwviqZLpXinw15eH1LIVOObYvL8GuU/T+Cy94d6SsY04Ub5XVZlAD42t9QK/dYHpsLU7pPU82dmqSB8A0WCXRuIJ9mjf57ryuimN0jDbQ1ptwNAgN/hI9D6Urljzx0XMLT60CL/CxTcUunp38dzd0dO649Fj+Tw3TDHYXk6rNOceb9Lr33U/EmMwa4EEc3ZAO6h9QxJXgn4W0dQaDZPO32T8LL0RtDra6w0bXf2H+7KtrKz3L+eD0ZenhxJJqvXfj2VO7m7XBa94q9zxVLQYwSAKUXq2Frjcz3G54KITcHlFEbM/LI+ccqLS4g+h3To4bC9LunEMeVIw+4r5j0UvpfSw7bVRrfbZd92pQUjAqW7HErWTDShOarxn9uuDC6nGuarYKo5sOh1cjkK2m2M9kUaihw3fBGaF0pcw9OL1czOg1ITEKRckdCEJhAQhCAFT2vINgkLmhAHR8hPJJXNCEACEIQAqXUmoQAIQhAAhCEAKukby0hzSQQbBHIIXJKgDScfxdzxD5bmQOcG6fNpwdxVkXV/NUKfMe6Qylx1l2rUDRBu7B+q2zt/wAP8BuJEJYWzvfGHSSFzrtwB+Ag7AXssh7v6UMXNnx2nU1jhoPrpcA4A/MA19lztHbRKco1Rx+f6Nl8LYwTk/8AT23+JfUTH5eqJpLdJkDCJOKu7oH50r32Xl/qcSJzC6RzWBs1kucHjkuJ335+6w9bl4V5EDunsZHQexzvPbY1aiSQ4/Itqj8q9FVr6K6qswjjft+ffJo0N9k7H1PO3f37Rn/efUfK6oZIfhdGGtk2oOcAdVj1GkgfZWHtzvr4tMojiBoh1mjXLSTxa8nxcngdmsERaXtiAnIoi7OkH/yA/uFR42ucQ1oJJNACySTwAFdXp4X0Q6l29/0Vz1M6bp43TfHY+hMfuPGlrypRIdVAN+Kj7Ejb1UvD6eWPEj3uf9RxftSy/s6LJwJAcrHkZE4/C74SGvNCjR2sbb1vS03/APtRijwK+G63PouRfUq5dMHlePj9jq0zdkMtYfdb7fcsYymMbZTH5jXcb+yrLeo6mPALa3+dj0pGDG5rGlz7PI9OVnxtuH6eJWO9+kh8j30Aatrq3sexVK6b19kb/ia8+jgADx6jdXrvLqgaCxzhWknbnf2+azjptU53qXHV8vYLr6RZqfWtuxm1LcbF0PD7l6d1djm7bg8HbhUnrGh8jqaK9P8AO/1Tuo4znNDmg81zVj/f7rx5smRttOxHuN1fp6Et4sp1N+3TJEZ8VEi7ooIpMbJ77p2q10DmZXYVCWkKAIyEITCAhCEACEIQAIQhAAhCEACEIQAIQlQAiEqEAIlQhAFy6R4i5+PC2Bhie1oqMvYXOaPQAgiwPmqrmZb5ZHyyOL3vcXPceSTyo6FXCquEnKKw3yPKyUkk3wCex5G4JH0JCYhWCArB2PlxQ50D5qDbI1Hhpc0hrj9yq+hLOCnFxfdYGhLokpLsb33NnY7MScyujc10TgAHNJeXCgG++9LEcKV7nsYZHhpcB+5wCiWU1ZtLpVRFpPOfI06rVfGknjGDS+kzlr2t5B2I5I+Y+auWJ1WIQ6Q4k0QDX2WJs61kACn8etC/yvWj7sc1tBhDv/cCL96pZLtDOXmb6tfVw9iV3fO+acaboNIq9uef99l4UcMuqmks9z/ivVel0svm+I7lx5JA34pehMyNh0OG/qfUEX/+rRGfw0oY4KJVq1/EzycYWnQ0l2qhTr5H29l4nW5Gl4rcgU4/4XszRRlhb+4nnkABeB1HGDCK4PH+U9OOrImoyoYXB6nS+jRuja6Qai4XyQADxwoXV+nCJzS29LroHeiPS0/pnWjE3Q5usD9puiPko/UeoGZwNaQP2i755JKaMbfiNvgScqPgpRXze8+RGQhCvMpGQhCYQEIQgAQhCABCEIAEIQgBUiEIAVCEIAEIQgAQhCABCEIAEIQgAQhCABCEIAEIQgCz9OeDGwt22r7jlMys+5ms0gmviNkb0T/akIWRRTlL6nQc2q4474JcUwqi0H2PBFquZs5e43tWwCVCalJNsXUyfSkQk5iELSzEjshCEox//9k=');
+scroll-behavior: smooth;">
+
+    <header>
+        <div id="home" class="row mt-2">
+            <div class="col-md-10 col-8 d-flex bg-dark" style=" width: 100%;">
+                <nav class="navbar navbar-expand-lg navbar-light bg-dark" style="width:60em;">
+                    <div class="container-fluid text-center">
+                        <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#home"
+                                        style="color: white;">Home</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false" style="color: white;">
+                                        Services
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <li><a class="dropdown-item" href="#booking">Program Booking</a></li>
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <li><a class="dropdown-item" href="#rental">Rental Services</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#gallery" style="color: white;">Gallery</a>
+                                </li>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#about" style="color: white;">About Us</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#contact" style="color: white;">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+                <img src="img\avlogoed.png" alt="AV Sounds Logo" style="max-height: 5em; padding-right: 5em;">
+
+            </div>
+        </div>
+        <section class="row mt-2">
+            <div class="bg-danger">
+                <marquee onmouseover="this.stop()" onmouseleave="this.start()" style="color: white; ">
+                    Sound & Lighting Solutions can meet your deadlines if you simply do not have the time to
+                    install your new investment. We can arrange for travel to your venue and we are happy to
+                    handle system installation as well as training for your staff. </marquee>
+            </div>
+        </section>
+    </header>
+    <section class="row mt-1 col-md-12 col-12 mx-auto">
+        <div class="carousel slide carousel-fade p-1" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img\front1ed.jpg" class=" img-fluid d-block w-100" alt="front1">
+                </div>
+                <div class="carousel-item">
+                    <img src="img\front2.jpg" class="d-block w-100" alt="front2">
+                </div>
+                <div class="carousel-item">
+                    <img src="img\front3.jpg" class="d-block w-100" alt="front3">
+                </div>
+                <div class="carousel-item">
+                    <img src="img\front4.jpg" class="d-block w-100" alt="front4">
+                </div>
+                <div class="carousel-item">
+                    <img src="img\front6.jpeg" class="d-block w-100" alt="front6">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+    <section>
+        <div id="booking" class=" row mt-2">
+            <Header class=" bg-dark text-center">
+                <h1 style="color: white;">Program Booking</h1>
+            </Header>
+        </div>
+        <div class="row ps-5 pe-5 pt-2 col-md-12 col-12">
+            <div class="bg-light">
+                <form class="p-5">
+                    <div class="row">
+                        <div class="form-group col-md-4">
+                            <label for="Firstname">First name</label>
+                            <input type="text" class="form-control" id="Firstname" placeholder="First name">
+                        </div>
+                        <div class="form-group col-md-2">
+                            <label for="Lastname">Last name</label>
+                            <input type="text" class="form-control" id="Lastname" placeholder="Last name">
+                        </div>
+                        <div class="form-group col-md-3 mb-3 ">
+                            <label for="validationCustom04">Place</label>
+                            <input type="text" class="form-control" id="validationCustom04" placeholder="Place"
+                                required>
+                        </div>
+                        <div class="form-group col-md-3 mb-3 ">
+                            <label for="validationCustom04">District</label>
+                            <select class="form-control" id="validationCustom04" placeholder="State">
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <option disabled selected>
+                                        <li class="dropdown-item" href="#">--Select District--</li>
+                                    </option>
+                                    <option>
+                                        <li class="dropdown-item" href="#">Ernakulam</li>
+                                    </option>
+                                    <option>
+                                        <li class="dropdown-item" href="#">Thrissur</li>
+                                    </option>
+                                    <option>
+                                        <li class="dropdown-item" href="#">Idukki</li>
+                                    </option>
+                                    <option>
+                                        <li class="dropdown-item" href="#">Kottayam</li>
+                                    </option>
+                                    <option>
+                                        <li class="dropdown-item" href="#">Alappuzha</li>
+                                    </option>
+                                </ul>
+                                </option>
+                            </select>
+                        </div>
+                        <br>
+                        <div class="form-group col-md-6">
+                            <label for="inputEmail4">Phone Number</label>
+                            <input type="tel" class="form-control" id="inputPhone" placeholder="Phone No.">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="inputEmail4">Email</label>
+                            <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                        </div>
+                        <label><br> </label>
+                        <label class="form-group" for="Firstname">Type of event</label>
+                        <br>
+                        <div class="form-group btn-group btn-group-toggle col-md-6 inline" data-toggle="buttons">
+                            <label class="btn btn-outline-dark">
+                                <input type="checkbox" name="options" id="option1" autocomplete="off" checked>
+                                Onstage
+                            </label>
+                            <label class="form-group btn btn-outline-dark">
+                                <input type="checkbox" name="options" id="option2" autocomplete="off"> Open Stage
+                            </label>
+                        </div>
+                        <label><br> </label>
+                        <label class="form-group" for="Firstname">Required services </label>
+                        <div class="btn-group btn-group-toggle col-md-6 inline" data-toggle="buttons">
+                            <label class="form-group btn btn-outline-dark">
+                                <input type="checkbox" name="options" id="option1" autocomplete="off" checked> PA
+                                System
+                            </label>
+                            <label class="form-group btn btn-outline-dark">
+                                <input type="checkbox" name="options" id="option2" autocomplete="off"> Illumination
+                            </label>
+                        </div>
+                        <label><br> </label>
+                        <div class="form-group col-md-12">
+                            <label for="validationTextarea">Comments</label>
+                            <textarea class="form-group form-control is-invalid" id="validationTextarea"
+                                placeholder="Comments">
+                            </textarea>
+                            <br>
+                        </div>
+                        <a href="index2.html" class="btn btn-dark" role="button" type="submit">Submit form</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+    <section>
+        <div id="rental" class="row mt-2">
+            <Header class=" bg-dark text-center">
+                <h1 style="color: white;">Rental Services</h1>
+            </Header>
+        </div>
+        <div class="row ps-5 pe-5 pt-2">
+            <div class="col-md-6 col-12" style=" background-color: tomato; padding-top: 6rem; height: 35em;">
+                <div class="card mx-auto" style="width: 18rem;">
+                    <img src="img\PA.png" style="width: 10em; margin-left: 4em; margin-top: 2em;">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">PA Systems</h5>
+                        <p class="card-text text-center">Make use of our the available PA Syastems with us</p>
+                        <a href="index1.html" class="btn btn-primary ms-5">Check
+                            Availability </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-12 bg-danger" style="padding-top: 6em;height: 35em;">
+                <div class="card mx-auto" style="width: 18rem;">
+                    <img src="img\illu.png" style="width: 10em; margin-left: 4em; margin-top: 2em;">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Illumination</h5>
+                        <p class="card-text text-center">Make use of our the available illuminaries with
+                            us...
+                        </p>
+                        <a href="index1.html" class="btn btn-primary ms-5">Check
+                            Availability</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section>
+        <div id="gallery" class="row mt-2">
+            <Header class=" bg-dark text-center">
+                <h1 style="color: white;">Gallery</h1>
+            </Header>
+        </div>
+        <div class="row pt-2">
+            <div>
+                <div id="myCarousel" class="carousel slide col-md-12 col-12 " style="width: 100%;"
+                    data-bs-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></li>
+                        <li data-bs-target="#myCarousel" data-bs-slide-to="1"></li>
+                        <li data-bs-target="#myCarousel" data-bs-slide-to="2"></li>
+                        <li data-bs-target="#myCarousel" data-bs-slide-to="3"></li>
+                        <li data-bs-target="#myCarousel" data-bs-slide-to="4"></li>
+                        <li data-bs-target="#myCarousel" data-bs-slide-to="5"></li>
+                        <li data-bs-target="#myCarousel" data-bs-slide-to="6"></li>
+                        <li data-bs-target="#myCarousel" data-bs-slide-to="7"></li>
+                        <li data-bs-target="#myCarousel" data-bs-slide-to="8"></li>
+                    </ol>
+                    <div class="carousel-inner" role="listbox">
+                        <div class="carousel-item active">
+                            <img class="d-block w-100" src="img\ph1.jpg" alt="First slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="img\ph2.jpg" alt="Second slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="img\ph3.jpg" alt="Third slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="img\ph4.jpg" alt="Third slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="img\ph5.jpg" alt="Third slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="img\ph6.jpg" alt="Third slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="img\ph7.jpg" alt="Third slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="img\ph8.jpg" alt="Third slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="img\ph9.jpg" alt="Third slide">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#myCarousel" role="button" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#myCarousel" role="button" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div id="about" class="row mt-2">
+            <Header class=" bg-dark text-center">
+                <h1 style="color: white;">About Us</h1>
+            </Header>
+        </div>
+        <div class="row ps-5 pe-5 pt-2">
+            <div class="col-md-4 col-12 d-flex justify-content-center p-3" style="background-color: cornflowerblue;">
+                <div class="card" style="width: 18rem;">
+                    <img src="img\vish.png" style="width: 10em; margin-left: 4em; margin-top: 2em;">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Vision</h5>
+                        <p class="card-text text-center">To be the leading and most preferred event
+                            solution provider by planning and executing an innovative and Unique event
+                            that is value for money</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-12 d-flex justify-content-center p-3" style="background-color:cadetblue;">
+                <div class="card" style="width: 18rem;">
+                    <img src="img\mish.png" style="width: 10em; margin-left: 4em; margin-top: 2em;">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Mission</h5>
+                        <p class="card-text text-center">We are committed to constantly learn and relearn every
+                            single day to ensure that we exceed the expectations of our customers thereby leaving
+                            an indelible nark behind. We assure our undivided attention to details to ensure
+                            customer
+                            satisfaction. To maintain a consistently high level of service thus creating a unique
+                            standing for our clients and the AV Event Solutions throughout
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-12 d-flex justify-content-center p-3" style="background-color: crimson;">
+                <div class="card" style="width: 18rem;">
+                    <img src="img\valu.png" style="width: 10em; margin-left: 4em; margin-top: 2em;">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Values</h5>
+                        <p class="card-text text-center">We are committed to constantly learn and relearn every
+                            single day to ensure that we exceed
+                            the expectations of our customers thereby leaving an indelible nark behind. We assure
+                            our
+                            undivided attention to details to ensure customer satisfaction. To maintain a
+                            consistently
+                            high level of service thus creating a unique standing for our clients and the AV Event
+                            Solutions
+                            throughout
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div id="contact" class="row mt-2">
+            <Header class=" bg-dark text-center">
+                <h1 style="color: white;">Contact Us</h1>
+            </Header>
+        </div>
+
+        <div class="row ps-5 pe-5 pt-2 pb-2 ">
+            <div class="col-md-6 col-12 p-5 " style="background-color: lightcoral">
+                <!-- <div class=" bg-primary" style="padding-left: 4em ;padding-top: 3em;"> -->
+                <div class="card bg-lite text-danger mb-3 mx-auto" style="max-width: 18rem;">
+                    <div class="card-header text-light bg-danger">Info</div>
+                    <div class="card-body">
+                        <h5 class="card-title">AV Light and Sound</h5>
+                        <p class="card-text">Prop. Mr. Venu AG
+                            <br>
+                            Ph: 0484-2610624
+                            <br>
+                            Mob: 9447871624 <br>
+                            Email: prasanthav14@gmail.com
+                        </p>
+                    </div>
+                </div>
+
+
+                <div class="card bg-light mb-3 mx-auto" style="max-width: 18rem;">
+                    <div class="card-header text-light bg-danger">Address</div>
+                    <div class="card-body">
+                        <!-- <h5 class="card-title">Light card title</h5> -->
+                        <p class="card-text text-danger">Alambalassery (H)
+                            <br>
+                            Maikad P.O <br> Kariyad <br> Nedumbassery - 683589 <br> Ernakulam - dist. <br>
+                            Kerala, india
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class=" col-md-6 col-12" style="background-color: lightgray;">
+                <div class="d-flex justify-content-center p-5">
+                    <img src="img\avlogoed.png" style="width: 25em">
+                </div>
+                <div class="d-flex justify-content-center pb-5">
+                    <img src="img\social.png" style="width: 10em">
+                </div>
+                <div style="text-align: center;">
+                    <a href="#home" class="btn btn-outline-danger btn-sm mb-5">Go Back Home</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="row">
+        <div class="col-12 col-md-12 bg-dark" style="text-align: right">
+            <h6 class="p-2" style="color: white">
+                <pre>Terms of Service   Privacy Policy    Copyright © 2022</pre>
+            </h6>
+        </div>
+    </footer>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+        </script>
+
+</body>
+
+</html>
